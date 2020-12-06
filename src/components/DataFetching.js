@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 const DataFetching = () => {
     let initialData = {title: "Waiting for Data from server"};
     let [data, setData] = useState(initialData);
-    let [dataLoad, setDataLoad] = useState(false);
+    let [dataLoad] = useState(false);
 
     useEffect(() => {
         async function fetchData(){
