@@ -8,10 +8,8 @@ const DataFetching = () => {
     useEffect(() => {
         async function fetchData(){
             const response = await fetch('https://jsonplaceholder.typicode.com/todos/1');
-            console.log(response);
             const dataFetched = await response.json();
             setData(dataFetched);
-            console.log(data);
         }  
       fetchData();
       },[dataLoad])
